@@ -305,7 +305,7 @@ body {
 }
 
 .handle-hr {
-    max-width: 402px;
+    max-width: 500px;
     margin: 180px auto 0;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgb(13, 13, 13);
