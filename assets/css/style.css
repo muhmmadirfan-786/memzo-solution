@@ -277,7 +277,7 @@ body {
     opacity: 0.55;
 }
 
-.hero-section::before {
+/* .hero-section::before {
     position: absolute;
     bottom: 50px;
     right: 0;
@@ -290,7 +290,7 @@ body {
     pointer-events: none;
     filter: blur(60px);
     opacity: 0.55;
-}
+} */
 
 #particleCanvas {
     position: absolute;
