@@ -308,7 +308,7 @@ body {
     max-width: 500px;
     margin: 180px auto 0;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(4 4 4 / 50%);
     border-radius: 8px;
     padding: 8px 13px;
 }
@@ -423,7 +423,7 @@ background-color:  rgba(255, 255, 255, 0.12);
 }
 
 .requir-p {
-    color: rgba(255, 255, 255, .8);
+    /* color: rgba(255, 255, 255, .8); */
     font-size: 18px;
     font-weight: 400;
 }
@@ -516,7 +516,8 @@ background-color:  rgba(255, 255, 255, 0.12);
 
 .contact-us-form {
     border: 1px solid #696464;
-    background: linear-gradient(180deg, #000, #212020 100%, #ababab 114.00000000000001%);
+    /* background: linear-gradient(180deg, #000, #212020 100%, #ababab 114.00000000000001%); */
+    background-color: rgb(27 23 23 / 50%);
     border-radius: 20px;
     padding: 20px;
     position: relative;
@@ -524,12 +525,16 @@ background-color:  rgba(255, 255, 255, 0.12);
 }
 
 .form-control {
-    background-color: rgba(187, 187, 187, .15);
+    /* background-color: rgba(187, 187, 187, .15); */
+    background-color: rgb(4 4 4 / 15%);
     border: none;
     padding: 12px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 400;
+}
+.form-control::placeholder {
+    color: rgba(255, 255, 255, .5);
 }
 
 .form-control:focus {
