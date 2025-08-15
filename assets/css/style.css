@@ -417,7 +417,8 @@ background-color:  rgba(255, 255, 255, 0.12);
 .pro-card p {
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, .7);
+    /* color: rgba(255, 255, 255, .7); */
+    color: #000;
     padding-top: 10px;
 
 }
@@ -495,7 +496,8 @@ background-color:  rgba(255, 255, 255, 0.12);
 }
 
 .discover-card .wrongful-p {
-    color: rgba(255, 255, 255, .7);
+    /* color: rgba(255, 255, 255, .7); */
+    color: #000;
 }
 
 .discover-avatar {
@@ -506,12 +508,12 @@ background-color:  rgba(255, 255, 255, 0.12);
 }
 
 .p-ben {
-    color: rgb(255, 255, 255);
+    color: #000;
 }
 
 .civ-p {
-    color: rgba(255, 255, 255, .7);
-    ;
+    color: #000;
+    
 }
 
 .contact-us-form {
