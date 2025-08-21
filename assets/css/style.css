@@ -700,11 +700,27 @@ footer {
     .font-s-12{
         font-size: 12px;
     }
+    .handle-hr{
+        margin: 30px 0;
+    }
 }
 
 
 
-
+.index-hero__bg {
+    /* position: absolute; */
+    /* z-index: 2; */
+    /* top: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
 
 
 
