@@ -107,12 +107,21 @@
                 </div>
                 </div>
 
-                <div>
-                   <video autoplay loop muted playsinline data-source="index_bg_loop" class="index-hero__bg index-hero__bg--loop">
-                    <source src="assets/images/MEMZO.mp4" type="video/webm">
-                    </video>
+                <div style="background-color: #010315;" class="relative">
+                    <!-- Second video (loop in background) -->
+                    <div class="seconed-video">
+                        <video autoplay loop muted playsinline>
+                        <source src="assets/images/MEMZO.mp4" type="video/webm">
+                        </video>
+                    </div>
 
-                </div>
+                    <!-- First video (plays once, then fades out) -->
+                    <div class="first-video" id="firstVideoWrapper">
+                        <video autoplay muted playsinline>
+                        <source src="assets/images/index_bg-first.mp4" type="video/webm">
+                        </video>
+                    </div>
+                    </div>
                 <div class="container">
                 <div class="handle-hr w-100 d-flex gap-3 align-items-center justify-content-center wow animate__animated animate__fadeInDown" data-wow-duration="1.2s">
                     <svg

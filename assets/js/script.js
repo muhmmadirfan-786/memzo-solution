@@ -1,66 +1,75 @@
 
 
-const canvas = document.getElementById("particleCanvas");
-const ctx = canvas.getContext("2d");
+// const canvas = document.getElementById("particleCanvas");
+// const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+// canvas.width = window.innerWidth;
+// canvas.height = window.innerHeight;
 
-const particlesArray = [];
-const numParticles = 100;
+// const particlesArray = [];
+// const numParticles = 100;
 
-class Particle {
-    constructor(x, y, size, speedX, speedY) {
-        this.x = x;
-        this.y = y;
-        this.size = size;
-        this.speedX = speedX;
-        this.speedY = speedY;
-    }
+// class Particle {
+//     constructor(x, y, size, speedX, speedY) {
+//         this.x = x;
+//         this.y = y;
+//         this.size = size;
+//         this.speedX = speedX;
+//         this.speedY = speedY;
+//     }
 
-    update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
+//     update() {
+//         this.x += this.speedX;
+//         this.y += this.speedY;
 
-        // Bounce off the edges
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-    }
+//         // Bounce off the edges
+//         if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+//         if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+//     }
 
-    draw() {
-        ctx.fillStyle = "rgba(95, 93, 93, 1)";
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-    }
-}
+//     draw() {
+//         ctx.fillStyle = "rgba(95, 93, 93, 1)";
+//         ctx.beginPath();
+//         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+//         ctx.fill();
+//     }
+// }
 
-// Create particles
-for (let i = 0; i < numParticles; i++) {
-    let size = Math.random() * 1 + 1;
-    let x = Math.random() * canvas.width;
-    let y = Math.random() * canvas.height;
-    let speedX = (Math.random() - 0.5) * 2;
-    let speedY = (Math.random() - 0.5) * 2;
-    particlesArray.push(new Particle(x, y, size, speedX, speedY));
-}
+// // Create particles
+// for (let i = 0; i < numParticles; i++) {
+//     let size = Math.random() * 1 + 1;
+//     let x = Math.random() * canvas.width;
+//     let y = Math.random() * canvas.height;
+//     let speedX = (Math.random() - 0.5) * 2;
+//     let speedY = (Math.random() - 0.5) * 2;
+//     particlesArray.push(new Particle(x, y, size, speedX, speedY));
+// }
 
-// Animation loop
-function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+// // Animation loop
+// function animate() {
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    for (let particle of particlesArray) {
-        particle.update();
-        particle.draw();
-    }
+//     for (let particle of particlesArray) {
+//         particle.update();
+//         particle.draw();
+//     }
 
-    requestAnimationFrame(animate);
-}
+//     requestAnimationFrame(animate);
+// }
 
-animate();
+// animate();
 
-// Resize canvas on window resize
-window.addEventListener("resize", () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
+// // Resize canvas on window resize
+// window.addEventListener("resize", () => {
+//     canvas.width = window.innerWidth;
+//     canvas.height = window.innerHeight;
+// });
+
+
+
+// When page loads, fade out the first video after 4 seconds
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("firstVideoWrapper").classList.add("fade-out");
+    }, 4000); // 4000 ms = 4 seconds
+  });

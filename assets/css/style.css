@@ -143,7 +143,9 @@ body {
     font-size: 50px;
 }
 .tetx-align-start{text-align: start;}
-
+.relative{
+    position: relative;
+}
 
 /*Cusom Navbar*/
 
@@ -707,20 +709,33 @@ footer {
 
 
 
-.index-hero__bg {
-    /* position: absolute; */
-    /* z-index: 2; */
-    /* top: 0; */
-    /* right: 0; */
-    /* bottom: 0; */
-    /* left: 0; */
+ .first-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
+    transition: opacity 1s ease; /* fade effect */
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .seconed-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .first-video.fade-out {
+    opacity: 0;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
-}
+  }
 
 
 
