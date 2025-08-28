@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coming Soon • PinaSakay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #2d6b56;                  /* your main background */
+      --glass-border: rgba(255,255,255,.25);
+      --text: #ffffff;
+      --muted: #e9efe9;
+      --gold-1: #b18b44;              /* your gradient start */
+      --gold-2: #e4d392;              /* your gradient end   */
+      --radius: 18px;
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+
+    *{ box-sizing:border-box }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      color:var(--text);
+      background: var(--bg);
+    }
+
+    /* Pure color background + animated white blobs */
+    .hero{
+      position:relative;
+      min-height:100%;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      background: var(--bg);
+    }
+
+    .blob{
+      position:absolute;
+      width:52vmax; height:52vmax;
+      filter: blur(80px);
+      opacity:.55;
+      transform: translate(-50%,-50%);
+      pointer-events:none;
+      animation: drift 26s linear infinite;
+      /* white glow blobs */
+      background:
+        radial-gradient(circle at 30% 30%, rgb(255, 255, 255), transparent 60%),
+        radial-gradient(circle at 70% 70%, rgb(255, 255, 255), transparent 60%);
+    }
+    .blob.b1{ top:-10%; left:85%; }
+    .blob.b2{ top:110%; left:15%; animation-duration: 34s; }
+
+    @keyframes drift{
+      0%   { transform: translate(-50%,-50%) rotate(0deg)   scale(1); }
+      50%  { transform: translate(-48%,-52%) rotate(180deg) scale(1.08); }
+      100% { transform: translate(-50%,-50%) rotate(360deg) scale(1); }
+    }
+
+    /* Card */
+    .card{
+      position:relative;
+      width:min(920px, 92vw);
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom right, rgba(255,255,255,.10), rgba(255,255,255,.06));
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(20px, 4.5vw, 40px);
+      isolation:isolate;
+      animation: rise .9s ease-out both;
+    }
+    @keyframes rise{
+      from{ opacity:0; transform: translateY(18px) scale(.98); }
+      to  { opacity:1; transform: translateY(0)    scale(1); }
+    }
+
+    /* Logo */
+    .logo{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+    .logo img{
+      width:140px; height:auto; border-radius:12px;
+      box-shadow:0 8px 30px rgba(0,0,0,.35);
+      animation: float 4.5s ease-in-out infinite;
+    }
+    @keyframes float{
+      0%,100%{ transform: translateY(0); }
+      50%    { transform: translateY(-8px); }
+    }
+    .brand{
+      font-weight:800; font-size: clamp(26px, 4.8vw, 42px);
+      letter-spacing:.2px; line-height:1;
+      background: linear-gradient(90deg, var(--gold-1), var(--gold-2)); /* your gradient */
+      -webkit-background-clip:text; background-clip:text; color: transparent;
+      display:inline-block;
+    }
+
+    /* Headline shimmer (white) */
+    h1{
+      margin:.2rem 0 1rem;
+      font-size: clamp(28px, 5.2vw, 44px);
+      font-weight:800; line-height:1.1;
+      background: linear-gradient(110deg, #fff 10%, #f6f6f6 25%, #fff 40%);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      background-size:200% auto; animation: shimmer 3s linear infinite;
+    }
+    @keyframes shimmer{
+      0%{ background-position:0% 50%; }
+      100%{ background-position:200% 50%; }
+    }
+
+    p{ margin:.4rem 0 1rem; color:var(--muted); font-weight:400; line-height:1.65; }
+
+    .divider{
+      height:1px;
+      background: linear-gradient(to right, transparent, rgba(255,255,255,.35), transparent);
+      margin:1.2rem 0 1.4rem;
+    }
+
+    /* Button with your gradient */
+    .cta{
+      display:inline-block;
+      padding:12px 18px;
+      border-radius:12px;
+      border:1px solid var(--glass-border);
+      background: linear-gradient(90deg, var(--gold-1), var(--gold-2));
+      color:#2b2b2b; text-decoration:none; font-weight:700;
+      transition: transform .15s ease, box-shadow .15s ease;
+      box-shadow:0 6px 20px rgba(0,0,0,.25);
+      position:relative; overflow:hidden;
+    }
+    .cta:hover{ transform: translateY(-2px); box-shadow:0 10px 30px rgba(0,0,0,.35); }
+    /* optional gentle sheen on hover */
+    .cta::after{
+      content:""; position:absolute; inset:0;
+      background: linear-gradient(120deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.35) 50%, rgba(255,255,255,.0) 70%);
+      transform: translateX(-120%);
+      transition: transform .5s ease;
+    }
+    .cta:hover::after{ transform: translateX(120%); }
+
+    @media (prefers-reduced-motion: reduce){
+      .logo img, .blob, h1, .cta::after{ animation:none !important; transition:none !important; }
+    }
+
+    footer{ text-align:center; font-size:.9rem; color:#eef3ee; opacity:.9; margin-top:16px; }
+  </style>
+</head>
+<body>
+  <section class="hero" role="img" aria-label="Green background with soft white glow">
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+
+    <main class="card" role="main">
+      <div class="logo">
+        <img src="https://dummyimage.com/280x120/ffffff/2d6b56.png&text=Logo" alt="Company logo">
+        <span class="brand">PinaSakay&nbsp;Corporation</span>
+      </div>
+
+      <h1>Our site is coming soon</h1>
+
+      <p>PinaSakay Corporation is a premier IT software and hardware solutions company, also engaged in general trading, import and export, and outsourcing.</p>
+      <p>Founded in 2024, we are committed to delivering cutting-edge technology solutions, efficient trading services, and reliable outsourcing options.</p>
+      <p>Driven by a deep sense of nationalism, our mission goes beyond business—we strive to uplift the quality of life for Filipinos by fostering economic opportunities, empowering local industries, and championing technological advancements.</p>
+      <p>Through innovation and strategic partnerships, we aim to contribute to a stronger, more self-sufficient Philippines while ensuring world-class services for our clients.</p>
+
+      <div class="divider" aria-hidden="true"></div>
+      <a class="cta" href="#" aria-label="Notify me (placeholder)">Notify me</a>
+
+      <footer>© 2024 PinaSakay Corporation • All rights reserved</footer>
+    </main>
+  </section>
+</body>
+</html>
