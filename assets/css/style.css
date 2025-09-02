@@ -179,7 +179,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: rgb(12 11 11 / 81%);
+    background-color: rgb(27 23 23 / 50%);
     transform-origin: 50% 50% 0px;
     backdrop-filter: blur(10px);
     opacity: 1;
@@ -325,6 +325,23 @@ body {
     font-size: 60px;
     font-weight: 700;
     padding-top: 30px;
+}
+.header-btn{
+    border: 1px solid white;
+    border-radius: 24px;
+    padding: 10px 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.header-btn span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.header-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* white with 20% opacity */
+    transition: background-color 0.3s ease;
 }
 
 
