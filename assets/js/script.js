@@ -68,8 +68,8 @@
 
 
 // When page loads, fade out the first video after 4 seconds
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      document.getElementById("firstVideoWrapper").classList.add("fade-out");
-    }, 4000); // 4000 ms = 4 seconds
-  });
+  // window.addEventListener("load", () => {
+  //   setTimeout(() => {
+  //     document.getElementById("firstVideoWrapper").classList.add("fade-out");
+  //   }, 4000); // 4000 ms = 4 seconds
+  // });
