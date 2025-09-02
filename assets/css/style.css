@@ -665,6 +665,9 @@ footer a:hover{
         border-radius: 0px 0px 30px 30px;
         transition: all .5s linear;
     }
+    .seconed-video {
+    padding-top: 67px;
+}
 }
 
 @media screen and (max-width: 450px) {
