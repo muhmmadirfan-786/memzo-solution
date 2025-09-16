@@ -165,27 +165,17 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
-    /* background: #ffffff; */
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
     transition: all .3s linear;
     z-index: 1111;
 }
 
-/* .main-nav.bgchange{
-    background: rgb(198, 210, 212);
-    transition: all .3s linear;
-} */
-
-
 .main-nav .navbar {
-    /* height: 80px; */
     padding: 10px 18px;
     flex-wrap: nowrap;
     position: unset;
     transition: all .3s linear;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     background-color: rgb(27 23 23 / 50%);
     transform-origin: 50% 50% 0px;
     backdrop-filter: blur(10px);
@@ -232,7 +222,6 @@ body {
     transform-origin: 50% 50% 0px;
     opacity: 1;
     cursor: pointer;
-    /* padding: 10px 15px; */
     transition: 0.3s;
     cursor: pointer;
 }
@@ -265,19 +254,16 @@ body {
     display: none;
 }
 
-/* .hero-section{
-    height: 1500px;
-    background: rgb(6, 231, 175);
-} */
-
 .hero-section {
-    /* background-color: rgb(0, 0, 0); */
     overflow: hidden;
     position: relative;
     padding: 0 0 100px 0;
-    /* min-height: 500px; */
 }
-
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .hero-section::after {
     position: absolute;
     top: 50px;
@@ -291,46 +277,6 @@ body {
     pointer-events: none;
     filter: blur(60px);
     opacity: 0.55;
-}
-
-/* .hero-section::before {
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    content: "";
-    background-image: url(../images/botom-hero.svg);
-    width: 1085px;
-    height: 184px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    filter: blur(60px);
-    opacity: 0.55;
-} */
-
-#particleCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    display: block;
-    pointer-events: none;
-    /* So it doesn't block clicks */
-}
-
-.handle-hr {
-    max-width: 500px;
-    margin: 180px auto 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgb(4 4 4 / 50%);
-    border-radius: 8px;
-    padding: 8px 13px;
-}
-
-.handle-hr p {
-    color: rgb(255, 255, 255);
 }
 
 .less-heading {
@@ -351,17 +297,6 @@ body {
 .header-btn1:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-/* .header-btn span{
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-
-} */
-/* .header-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-    transition: background-color 0.3s ease;
-} */
 
 
 /* // marquiee slider */
@@ -387,8 +322,6 @@ body {
     position: absolute;
     width: 140px;
     height: 100px;
-    /* background-color: rgb(12 5 42); */
-    ;
     content: '';
     right: -20px;
     filter: blur(10px);
@@ -417,21 +350,6 @@ body {
 
 .ai-product-section {
     padding: 36px 0;
-}
-
-.pro-card h3 {
-    font-size: 22px;
-    font-weight: 400;
-
-}
-
-.pro-card p {
-    font-size: 16px;
-    font-weight: 400;
-    /* color: rgba(255, 255, 255, .7); */
-    color: #000;
-    padding-top: 10px;
-
 }
 
 .requir-p {
@@ -482,114 +400,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-.discover-card {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgb(27 23 23 / 50%);
-    border-radius: 30px;
-    padding: 20px 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.discover-card::after {
-    position: absolute;
-    content: "";
-    background-color: rgba(81, 47, 235, 0.5);
-    filter: blur(50px);
-    border-radius: 231px;
-    opacity: 1;
-    right: -11px;
-    top: -11px;
-    width: 100px;
-    height: 100px;
-
-}
-
-.discover-card .wrongful-p {
-    /* color: rgba(255, 255, 255, .7); */
-    color: #000;
-}
-
-.discover-avatar {
-    width: fit-content;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 3px;
-    border-radius: 8px;
-}
-
-.p-ben {
-    color: #000;
-}
-
-.civ-p {
-    color: #000;
-
-}
-
-.contact-us-form {
-    border: 1px solid #696464;
-    /* background: linear-gradient(180deg, #000, #212020 100%, #ababab 114.00000000000001%); */
-    background-color: rgb(27 23 23 / 50%);
-    border-radius: 20px;
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-}
-
-.form-control {
-    /* background-color: rgba(187, 187, 187, .15); */
-    background-color: rgb(4 4 4 / 15%);
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.form-control::placeholder {
-    color: rgba(255, 255, 255, .5);
-}
-
-.form-control:focus {
-    background-color: #100a2b;
-    /* Bootstrap primary blue */
-    color: #fff;
-    box-shadow: none;
-}
-
-/* .send-btn {
-    background: linear-gradient(rgb(164, 132, 240) 0%, rgb(70, 22, 182) 100%);
-    border-radius: 17px;
-    box-shadow: rgba(207, 180, 180, 0.25) 0px 0px 40px 0px;
-    border: 1px solid rgb(227, 209, 209);
-    color: rgb(255, 235, 235);
-    padding: 14px 0px; 
-    transition: width 0.3s ease, padding 0.3s ease;
-    display: inline-block; 
-} */
-.send-btn {
-    border: 1px solid rgb(227, 209, 209);
-    background: linear-gradient(rgb(164, 132, 240) 0%, rgb(70, 22, 182) 100%);
-    height: 100%;
-    width: 100%;
-    border-radius: 17px;
-    box-shadow: rgba(207, 180, 180, 0.25) 0px 0px 40px 0px;
-    opacity: 1;
-    will-change: transform;
-    padding: 12px 40px;
-    color: rgb(255, 235, 235);
-    transition: padding 0.3s ease, transform 0.2s ease;
-    display: inline-block;
-    text-align: center;
-}
-
-.send-btn:hover {
-
-    transform: scale(0.92);
-    background: linear-gradient(rgb(164, 132, 240) 48%, rgb(70, 22, 182) 100%);
-}
-
 .contect-section::after {
     position: absolute;
     content: "";
@@ -646,8 +456,7 @@ footer a:hover {
     width: 100%;
     max-width: 1060px;
     margin: 0 auto;
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
@@ -750,7 +559,7 @@ footer a:hover {
     }
 
     .card-demad,
-    .ai-product-section .pro-card,
+    .ai-product-section,
     .discover-card {
         padding: 30px 16px;
     }
@@ -796,34 +605,6 @@ footer a:hover {
 
 
 
-.first-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 1s ease;
-    /* fade effect */
-    opacity: 1;
-    z-index: 2;
-}
-
-.seconed-video {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.first-video.fade-out {
-    opacity: 0;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 
