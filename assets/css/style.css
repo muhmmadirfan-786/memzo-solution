@@ -42,7 +42,10 @@ body {
 .gray-text {
     color: rgba(255, 255, 255, 0.7);
 }
-.text-black{color: #000;}
+
+.text-black {
+    color: #000;
+}
 
 /*------------------------------------- *********** Section 1 ********** ------------------------------*/
 
@@ -142,8 +145,12 @@ body {
 .font50 {
     font-size: 50px;
 }
-.tetx-align-start{text-align: start;}
-.relative{
+
+.tetx-align-start {
+    text-align: start;
+}
+
+.relative {
     position: relative;
 }
 
@@ -196,12 +203,16 @@ body {
     color: #FFF;
     font-size: 14px;
     font-weight: 400;
-    padding:2px 8px;
+    padding: 2px 8px;
     border-radius: 4px;
 }
-.nav-items a:focus {color: #FFF;}
+
+.nav-items a:focus {
+    color: #FFF;
+}
+
 .nav-items a:hover,
-.nav-items .active{
+.nav-items .active {
     background-color: rgba(255, 255, 255, 0.1);
     color: #FFF;
 
@@ -327,17 +338,20 @@ body {
     font-weight: 700;
     padding-top: 30px;
 }
-.header-btn1{
+
+.header-btn1 {
     border: 1px solid white;
     background-color: transparent;
     border-radius: 24px;
-    padding-left:24px;
-    padding-right:24px;
+    padding-left: 24px;
+    padding-right: 24px;
     cursor: pointer;
 }
-.header-btn1:hover{
+
+.header-btn1:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
+
 /* .header-btn span{
     font-size: 16px;
     font-weight: 500;
@@ -403,37 +417,6 @@ body {
 
 .ai-product-section {
     padding: 36px 0;
-}
-
-.ai-product-section .process-p {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgb(13, 13, 13);
-    border-radius: 8px;
-    padding: 8px 13px;
-    color: rgb(255 255 255 / 70%);
-    width: fit-content;
-    margin: 0 auto;
-}
-
-.ai-product-section h2 {
-    padding-top: 26px;
-    font-size: 40px;
-}
-
-.ai-product-section .pro-card {
-    border: 1px solid rgba(255, 255, 255, .1);
-    background-color: rgb(27 23 23 / 50%);
-    border-radius: 30px;
-    padding: 20px 30px;
-}
-.ai-product-section .gif-card {
-background-color:  rgba(255, 255, 255, 0.12);
-    /* mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.435) 27.4775%, rgb(0, 0, 0) 100%);
-     */
-     mask:linear-gradient(0deg, rgb(0 0 0 / 37%) 0%, rgb(0 0 0) 27.4775%, rgb(0, 0, 0) 100%);
-    width: 100%;
-    border-radius: 8px;
-    opacity: 1;
 }
 
 .pro-card h3 {
@@ -541,7 +524,7 @@ background-color:  rgba(255, 255, 255, 0.12);
 
 .civ-p {
     color: #000;
-    
+
 }
 
 .contact-us-form {
@@ -563,6 +546,7 @@ background-color:  rgba(255, 255, 255, 0.12);
     font-size: 16px;
     font-weight: 400;
 }
+
 .form-control::placeholder {
     color: rgba(255, 255, 255, .5);
 }
@@ -623,10 +607,12 @@ background-color:  rgba(255, 255, 255, 0.12);
     pointer-events: none;
     z-index: 0;
 }
-.lets-talk-p{
+
+.lets-talk-p {
     max-width: 420px;
     margin: 0 auto;
 }
+
 .lets-talk-p::after {
     position: absolute;
     content: "";
@@ -644,16 +630,54 @@ background-color:  rgba(255, 255, 255, 0.12);
     pointer-events: none;
     z-index: 0;
 }
-footer{
+
+footer {
     padding: 70px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-footer a:hover{
+
+footer a:hover {
     color: #000;
     font-weight: 500;
 }
-
+.tailored-ul {
+    padding: 80px 0;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex
+;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.tailored-ul li {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 15px 40px 40px 40px;
+}
+.tailored-ul li h3 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    background: linear-gradient(270deg, #8643C6 0%, #3063B6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-top: 25px;
+}
+.tailored-ul li p {
+    color: #818181;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    padding-top: 20px;
+}
 
 @media screen and (max-width: 768px) {
     .main-nav #nav-toggler {
@@ -661,8 +685,14 @@ footer a:hover{
         font-size: 20px;
         color: rgb(8, 2, 13);
     }
-    .main-nav{padding: 0;}
-    .main-nav .navbar{border-radius: unset;}
+
+    .main-nav {
+        padding: 0;
+    }
+
+    .main-nav .navbar {
+        border-radius: unset;
+    }
 
     .main-nav .nav-items {
         position: absolute;
@@ -687,83 +717,94 @@ footer a:hover{
         border-radius: 0px 0px 30px 30px;
         transition: all .5s linear;
     }
+
     .seconed-video {
-    padding-top: 67px;
-}
+        padding-top: 67px;
+    }
 }
 
 @media screen and (max-width: 450px) {
-    .font-sm-14{
+    .font-sm-14 {
         font-size: 14px;
     }
-    .less-heading{
+
+    .less-heading {
         font-size: 40px;
         width: 100%;
         max-width: 242px;
         margin: 0 auto;
     }
+
     .main-animate::after,
     .main-animate::before {
         display: none;
     }
+
     .ai-product-section h2 {
         padding-top: 26px;
         font-size: 32px;
-}
-.card-demad,
-.ai-product-section .pro-card,
-.discover-card  {
-    padding: 30px 16px;
-}
-.py-100 {
-    padding: 50px 0;
-}
-.font-sm-30{
-    font-size: 30px;
-}
-footer {
-    padding: 30px 0;
-}
+    }
+
+    .card-demad,
+    .ai-product-section .pro-card,
+    .discover-card {
+        padding: 30px 16px;
+    }
+
+    .py-100 {
+        padding: 50px 0;
+    }
+
+    .font-sm-30 {
+        font-size: 30px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
 
 }
+
 @media screen and (max-width: 400px) {
-    .font-s-12{
+    .font-s-12 {
         font-size: 12px;
     }
-    .handle-hr{
+
+    .handle-hr {
         margin: 30px 0;
     }
 }
 
 
 
- .first-video {
+.first-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: opacity 1s ease; /* fade effect */
+    transition: opacity 1s ease;
+    /* fade effect */
     opacity: 1;
     z-index: 2;
-  }
+}
 
-  .seconed-video {
+.seconed-video {
     position: relative;
     width: 100%;
     height: 100%;
     z-index: 1;
-  }
+}
 
-  .first-video.fade-out {
+.first-video.fade-out {
     opacity: 0;
-  }
+}
 
-  video {
+video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
 
 
