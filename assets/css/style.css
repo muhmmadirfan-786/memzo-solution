@@ -50,7 +50,7 @@ body {
 /*------------------------------------- *********** Section 1 ********** ------------------------------*/
 
 .container {
-    max-width: 1230px;
+    max-width: 1280px;
     padding: 0 15px;
 }
 
@@ -492,6 +492,150 @@ footer a:hover {
     margin-bottom: 50px;
 }
 
+.serve-section{
+    padding-top: 80px;
+}
+/* .serve-section .job-button{
+    width: 100%;
+    max-width: 399px;
+    color: #000;
+
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.95px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(10px);
+padding: 10px 26px;
+border: unset;
+} */
+.serve-section .job-button {
+    width: 100%;
+    max-width: 399px;
+    color: #000;
+   
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.95px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 10px 26px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 🔥 Hover: gradient background + white text */
+.serve-section .job-button:hover {
+    background: linear-gradient(270deg, #8643C6 0%, #3063B6 100%);
+    color: #FFF;
+}
+
+
+
+.readt-for-section{
+    padding-top: 200px;
+}
+.ready-for{
+    position: relative;
+}
+.ready-for::after{
+     content: "";
+    position: absolute;
+   background-image: url(../images/ready-right.png);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 310px;
+    left: 0;
+    top: 100px;
+    background-size: 100% 100%;
+    /* transform: rotate(-20deg); */
+    z-index: -1;
+   
+}
+.ready-for::before{
+    content: "";
+    position: absolute;
+   background-image: url(../images/ready-left.png);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 310px;
+    right: 0;
+    top: 100px;
+    background-size: 100% 100%;
+    /* transform: rotate(-20deg); */
+    z-index: -1;
+
+}
+.ready-right{
+ padding-top: 200px;
+/* width: 100%;
+margin: 0 auto; */
+text-align: center;
+/* max-width: 700px;
+margin: 0 auto; */
+}
+.ready-for h2{
+    /* background-color: #FFF; */
+   
+    text-align: center;
+
+font-size: 70px;
+font-style: normal;
+font-weight: 700;
+line-height: 90px; /* 128.571% */
+letter-spacing: 7px;
+text-transform: uppercase;
+background: linear-gradient(180deg, #262626 17.14%, #4D4D4D 68.57%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+display: inline-block;
+background-color: #FFF;
+}
+
+
+.footer-section{
+    padding-top: 200px;
+}
+.footer-links{
+    gap: 120px;
+   
+}
+.footer-links a{
+    color: #000;
+text-align: center;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 175% */
+letter-spacing: 2.4px;
+text-decoration: none;
+border-bottom: 1px solid transparent;
+}
+.footer-links a:hover{
+    border-bottom: 1px solid #000;
+}
+.footer-bot p{
+    padding: 85px 0;
+    color: #818181;
+text-align: center;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+letter-spacing: 0.9px;
+}
+
 @media screen and (max-width: 768px) {
     .main-nav #nav-toggler {
         display: block;
@@ -534,6 +678,14 @@ footer a:hover {
     .seconed-video {
         padding-top: 67px;
     }
+
+    .ready-for::before,
+.ready-for::after {
+    display: none;
+}
+.ready-right {
+    padding-top: 0px;
+}
 }
 
 @media screen and (max-width: 450px) {
@@ -589,6 +741,22 @@ footer a:hover {
 }
 .tailored-ul li {
     padding: 15px 31px 36px 20px;
+}
+.readt-for-section,
+.footer-section {
+    padding-top: 50px;
+}
+.ready-for h2 {
+    /* background-color: #FFF; */
+    font-size: 40px;
+    line-height: normal;
+}
+    .footer-links a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .footer-links {
+    gap: 20px;
 }
 
 }
