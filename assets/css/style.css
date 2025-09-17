@@ -53,6 +53,10 @@ body {
     max-width: 1280px;
     padding: 0 15px;
 }
+.container-xl {
+    max-width: 1480px;
+    padding: 0 15px;
+}
 
 .fw-300 {
     font-weight: 300;
@@ -452,14 +456,14 @@ footer a:hover {
     font-weight: 500;
 }
 .tailored-ul {
-    padding: 80px 0;
+    padding: 80px 0 150px 0;
     width: 100%;
     max-width: 1060px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .tailored-ul li {
     border-left: 1px solid rgba(0, 0, 0, 0.25);
@@ -513,11 +517,10 @@ padding: 10px 26px;
 border: unset;
 } */
 .serve-section .job-button {
-    width: 100%;
-    max-width: 399px;
+   width: 100%;
+    max-width: 360px;
     color: #000;
-   
-    font-size: 19px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -526,7 +529,7 @@ border: unset;
     background: #FFF;
     box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
-    padding: 10px 26px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -635,6 +638,10 @@ font-weight: 400;
 line-height: 28px; /* 155.556% */
 letter-spacing: 0.9px;
 }
+.individuals-icon{
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
 
 @media screen and (max-width: 768px) {
     .main-nav #nav-toggler {
@@ -687,7 +694,14 @@ letter-spacing: 0.9px;
     padding-top: 0px;
 }
 }
-
+@media screen and (max-width: 550px) {
+.tailored-ul{
+    gap: 0;
+}
+.tailored-ul li h3 {
+    font-size: 30px;
+}
+}
 @media screen and (max-width: 450px) {
     .font-sm-14 {
         font-size: 14px;
@@ -733,15 +747,17 @@ letter-spacing: 0.9px;
     .header-sec-img {
     margin-bottom: 0px;
 }
+
 .tailored-ul li h3 {
-    font-size: 35px;    padding-top: 8px;}
+    font-size: 20px;    padding-top: 8px;}
     .tailored-ul li p {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: normal;
     padding-top: 10px;
 }
 .tailored-ul li {
-    padding: 15px 31px 36px 20px;
-}
+        padding: 0px 13px 14px 17px;
+    }
 .readt-for-section,
 .footer-section {
     padding-top: 50px;
@@ -768,6 +784,17 @@ letter-spacing: 0.9px;
 
     .handle-hr {
         margin: 30px 0;
+    }
+}
+@media screen and (max-width: 375px) {
+        .tailored-ul li {
+        padding: 0px 5px 7px 6px;
+    }
+    .tailored-ul li h3 {
+        font-size: 18px;
+    }
+        .tailored-ul li p {
+        font-size: 14px;
     }
 }
 
