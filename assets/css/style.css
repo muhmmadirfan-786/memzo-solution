@@ -825,6 +825,9 @@ letter-spacing: 0.9px;
     .handle-hr {
         margin: 30px 0;
     }
+         .Tailor-section h2, .serve-section h2 {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 375px) {
         .tailored-ul li {
